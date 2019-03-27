@@ -8,6 +8,9 @@
     .error{
         color: red;
     }
+    .greeting {
+      color: blue;
+    }
     .good {
         color: blue;
     }
@@ -21,8 +24,15 @@ $(document).ready(function(){
             $("#result").html('<p class="error">Not valid!</p>').show().fadeOut(10000);
             // Preventing form submission
             event.preventDefault();
-        } else {
+        }
+        else if(currentValue == "hello"){
+            // Enter code here
+            $("#result").html('<p class="greeting">Hello to you too!</p>').show().fadeOut(10000);
+            event.preventDefault();
+        }
+        else {
             $("#result").html('<p class="good">Nice!</p>').show().fadeOut(10000);
+            event.preventDefault();
         }
     });
 });
@@ -35,6 +45,6 @@ $(document).ready(function(){
         <input type="text" name="first-name" id="oneWord">
         <input type="submit" value="Submit">
         <div id="result"></div>
-    </form>    
+    </form>
 </body>
-</html>                            
+</html>

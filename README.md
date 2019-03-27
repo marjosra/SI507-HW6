@@ -187,13 +187,34 @@ function springDate(){
 
 * **When you enter input that isn't valid, you see an error that is red. Why is the error in red? Why is the response for valid inputs blue?**
 
+The responses for both successful inputs and inputs that yield an error due to the following code:
+
+```js
+<style type="text/css">
+    .error{
+        color: red;
+    }
+    .good {
+        color: blue;
+    }
+</style>
+```
+
 * **What is this line `var regex = /^[a-zA-Z]+$/;` helping with? And if you googled something to figure that out, what did you google, and what, briefly, did you learn? (If you didn't need to google, you can leave that out, but explain briefly what that line is helping the program do, anyway.)**
+
+What I have discovered in my searching is that this line of code is making it so that certain expressions can only be characters a-z or A-Z. I googled the line `var regex = /^[a-zA-Z]+$/` and came across a post on StackOverflow which can be found at `https://stackoverflow.com/questions/3532053/regular-expression-for-only-characters-a-z-a-z`, and learned that this string is regularly used in writing requirements or inputs in JavaScript.
 
 * **What's different about the syntax of conditional statements in JavaScript, compared to Python?**
 
+I have noticed several differences about the syntax of conditional statements in JavaScript compared to Python. The first thing that stood out ot me is what is written to execute if the conditional is valid is enclosed in `{ }` instead of `:`. Another interesting aspect of JavaScript conditional syntax is that the parameters for the statement to be valid is enclosed in `( )` before the previously mentioned `{ }`.
+
 * **What do you think the `10000` refers to in the code `.fadeOut(10000)`?**
 
+I think that the `1000` stands for a certain amount of time that the response that appears after entering a word or words stays visible before disappearing.
+
 * **What do you think is going on with the following code at the beginning of the program? Note that the most important thing to do for answering this question is to be thoughtful and clear, not to be absolutely correct:**
+
+I think that the following code is setting up the bulk of how this site runs. It appears that `document` establishes a page and things that come after it set the stage for whatever comes after the last `{`. `function()` seems to be the actual entity holding this bulk, where `.ready()` seems to make it execute. 
 
 ```js
 $(document).ready(function(){
