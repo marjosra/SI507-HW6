@@ -91,7 +91,7 @@ alert() // Prints whatever is in the () to be visible in a pop-up box
 
 console.log() // Prints whatever is in the () to be visible in the console
 ```
-GSI Zhen Wang helped me with this problem.
+One would use `alert()` to have things explicitly alert the user in  pop-up window or box, where others may use `console.log()` if they are doing investigation within a webpage with the console itself. GSI Zhen Wang helped me with this problem.
 
 * **What code would have to comment out to get rid of the pop-up box when you load the page? (Related to the last question.) Do that in the code file, and then, add code so that a text box will appear that contains the current date and time! *HINT:* Look through the rest of the code first...**
 
@@ -113,7 +113,7 @@ document.querySelector('h1').innerHTML = "Mark Ramirez";
 
 * **What does the word `document` represent in this code? Explain briefly.**
 
-The word 'document' in this code is representing the page on which the information in the file `jsPracticeLab.html` is displayed. It allows for the constructions of the webpage's specifications. This ranges from displaying `"A name"` to specifying the color that the background of the webpage will be.
+The word `document` in this code is representing the page on which the information in the file `jsPracticeLab.html` is displayed. It allows for the constructions of the webpage's specifications. This ranges from displaying `"A name"` to specifying the color that the background of the webpage will be.
 
 * **What is happening in line 12 (
 		`document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length`
@@ -206,7 +206,7 @@ What I have discovered in my searching is that this line of code is making it so
 
 * **What's different about the syntax of conditional statements in JavaScript, compared to Python?**
 
-I have noticed several differences about the syntax of conditional statements in JavaScript compared to Python. The first thing that stood out ot me is what is written to execute if the conditional is valid is enclosed in `{ }` instead of `:`. Another interesting aspect of JavaScript conditional syntax is that the parameters for the statement to be valid is enclosed in `( )` before the previously mentioned `{ }`.
+I have noticed several differences about the syntax of conditional statements in JavaScript compared to Python. The first thing that stood out to me is what is written to execute if the conditional is valid is enclosed in `{}` instead of `:`. Another interesting aspect of JavaScript conditional syntax is that the parameters for the statement to be valid is enclosed in `()` before the previously mentioned `{}`.
 
 * **What do you think the `10000` refers to in the code `.fadeOut(10000)`?**
 
@@ -214,7 +214,7 @@ I think that the `1000` stands for a certain amount of time that the response th
 
 * **What do you think is going on with the following code at the beginning of the program? Note that the most important thing to do for answering this question is to be thoughtful and clear, not to be absolutely correct:**
 
-I think that the following code is setting up the bulk of how this site runs. It appears that `document` establishes a page and things that come after it set the stage for whatever comes after the last `{`. `function()` seems to be the actual entity holding this bulk, where `.ready()` seems to make it execute. 
+I think that the following code is setting up the bulk of how this site runs. It appears that `document` establishes a page and things that come after it set the stage for whatever comes after the last `{`. `function()` seems to be the actual entity holding this bulk, where `.ready()` seems to make it execute.
 
 ```js
 $(document).ready(function(){
