@@ -77,7 +77,7 @@ Some JavaScript code
 
 * **What does a code comment look like in JavaScript? What character/s do you have to put before a comment?**
 
-Code comments in JavaScript look similar to those in Python, however you must put '//' instead of '#' before the string to make it a comment.
+Code comments in JavaScript look similar to those in Python, however you must put `//` instead of `#` before the string to make it a comment.
 
 * **Explain what needs to happen to get a JavaScript program to "run", given the JavaScript you've seen in this assignment.**
 
@@ -106,20 +106,20 @@ Line 17 contains the following code:
 ```js
 document.querySelector('h1').innerHTML = "A name";
 ```
-I would replace the current string "A name" with my name (which I have done), like so:
+I would replace the current string `"A name"` with my name (which I have done), like so:
 ```js
 document.querySelector('h1').innerHTML = "Mark Ramirez";
 ```
 
 * **What does the word `document` represent in this code? Explain briefly.**
 
-The word 'document' in this code is representing the page on which the information in the file 'jsPracticeLab.html' is displayed. It allows for the constructions of the webpage's specifications. This ranges from displaying "A name" to specifying the color that the background of the webpage will be.
+The word 'document' in this code is representing the page on which the information in the file `jsPracticeLab.html` is displayed. It allows for the constructions of the webpage's specifications. This ranges from displaying `"A name"` to specifying the color that the background of the webpage will be.
 
 * **What is happening in line 12 (
 		`document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length`
 )? Explain, briefly (<= 2 sentences).**
 
-Based on the output on the page that 'jsPracticeLab.html' generates, the above line is searching the document for all items and identifying the ones with the tag <li>. It is then counting the number of times these items appear, which is 9.
+Based on the output on the page that `jsPracticeLab.html` generates, the above line is searching the document for all items and identifying the ones with the tag `<li>`. It is then counting the number of times these items appear, which is 9.
 
 * **What color would the background of this page be <u>if there were no JavaScript in this page</u>?**
 
@@ -127,7 +127,7 @@ The background of this page would be white if there were not JavaScript written 
 
 * **Why are there a couple of gray boxes on the screen with a different colored border? How could you edit this code to make them a different color? Explain briefly. Then edit the code to make those boxes some shade of blue, of your choosing.**
 
-The following code in 'jsPracticeLab.html' creates gray boxes on the screen with a different colored border:
+The following code in `jsPracticeLab.html` creates gray boxes on the screen with a different colored border:
 ```js
 <style>
 p{
@@ -139,15 +139,15 @@ p{
 }
 </style>
 ```
-To change the color, I would edit the 'background-color' and 'border' values after the '#' (in the code, it is now '7094db').
+To change the color, I would edit the `background-color` and `border` values after the `#` (in the code, it is now `7094db`).
 
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
 
-The following line made it clear to me that it was responsible for making "Go Blue!" appear when copying "University of Michigan" on the actual page:
+The following line made it clear to me that it was responsible for making `"Go Blue!"` appear when copying `"University of Michigan"` on the actual page:
 ```js
 <li oncopy="copyFunction()">University of Michigan</li>
 ```
-To make "O, Canada" appear when copying "McGill University," I made a similar function called 'candaCopy().' The following code proved to make this task a success:
+To make `"O, Canada"` appear when copying `"McGill University"`, I made a similar function called `candaCopy()`. The following code proved to make this task a success:
 ```js
 function canadaCopy(){
 	document.querySelector('#cheer').innerHTML += "O, Canada<br>"
@@ -168,7 +168,7 @@ function handleClick(){
 <button onclick=handleClick() id="wow-button">Wow</button>
 ```
 
-What kicks this whole process off is the presence of the tag '<button>.' The string "Wow" puts the text on the actual button, but it is in the 'onclick=handleClick()' string in which the guts of this process lie. This allows clicking the button that says 'Wow' to trigger the function within it to run, thus causing the line 'alert("hello")' to run. This results in a pop-up box that says "hello."
+What kicks this whole process off is the presence of the tag `<button>`. The string `"Wow"` puts the text on the actual button, but it is in the `onclick=handleClick()` string in which the guts of this process lie. This allows clicking the button that says `Wow` to trigger the function within it to run, thus causing the line `alert("hello")` to run. This results in a pop-up box that says `hello`.
 
 * **Knowing what you learned from the previous question, add code/markup to the `jsPracticeLab.html` file *so that* there is a button with the text `Spring Equinox 2019` on it somewhere on the page, and when that button is clicked, a text box containing the text `March 20, 2019` appears. (There's no function -- that I am aware of -- to automatically get this info, you've got to type it yourself.)**
 
