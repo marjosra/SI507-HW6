@@ -29,13 +29,22 @@
 		document.querySelector('#cheer').innerHTML += "Go blue!<br>"
 	}
 
+	function canadaCopy(){
+		document.querySelector('#cheer').innerHTML += "O, Canada<br>"
+	}
+
 	function handleClick(){
 		alert("hello");
 	}
+
+	function springDate(){
+		alert("March 20, 2019");
+	}
+
 </script>
 <style>
 p{
-	background-color: #b3b3b3;
+	background-color: #7094db;
 	border: 3px solid #FFFFFF;
 	padding: 3%;
 	font-size: 1.1em;
@@ -63,7 +72,7 @@ p{
 	<ul>
 		<li>Kent State</li>
 		<li>University of Pittsburgh</li>
-		<li>McGill University</li>
+		<li oncopy="canadaCopy()">McGill University</li>
 		<li>California State University Long Beach</li>
 		<li oncopy="copyFunction()">University of Michigan</li>
 	</ul>
@@ -72,6 +81,9 @@ p{
 	</div>
 
 	<button onclick=handleClick() id="wow-button">Wow</button>
+
+	<button onclick=springDate() id="spring-button">Spring Equinox 2019</button>
+
 
 </body>
 </html>
